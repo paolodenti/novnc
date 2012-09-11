@@ -12,3 +12,4 @@ override_dh_clean:
 
 override_dh_auto_build-arch:
 	make -C utils rebind.so
+	python setup.py sdist
